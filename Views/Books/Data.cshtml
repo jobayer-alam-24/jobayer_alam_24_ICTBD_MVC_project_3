@@ -1,1 +1,62 @@
-<h1>Library Data</h1>
+@* Books Class  *@
+@model Books;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/jobayer_alam_24_ICTBD_MVC_project_3.styles.css" asp-append-version="true" />
+</head>
+<body>
+
+    @* @model - is a Directive
+    @Model - is a Property *@
+    
+     <div class="container mt-5">
+        <!-- Course Table -->
+        <h3>Course Data</h3>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Fields Name</th>
+                    <th>Values</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Book ID</td>
+                    <td>@Model.BookID</td>
+                </tr>
+                <tr>
+                    <td>Title</td>
+                    <td>@Model.Title</td>
+                </tr>
+                <tr>
+                    <td>Author Name</td>
+                    <td>@Model.Author</td>
+                </tr>
+                <tr>
+                    <td>Gengre</td>
+                    <td>@Model.Genre</td>
+                </tr>
+                <tr>
+                    <td>ISBN</td>
+                    <td>@Model.ISBN</td>
+                </tr>
+                <tr>
+                    <td>Publisher</td>
+                    <td>@Model.Publisher</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>
