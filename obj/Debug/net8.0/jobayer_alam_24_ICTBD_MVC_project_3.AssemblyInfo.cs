@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("jobayer_alam_24_ICTBD_MVC_project_3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d14fb00857e0f33a68ddcf5b9f783ee15971fabc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c078857e3bff3db7bba8c954e0d6a7ab9bb02af")]
 [assembly: System.Reflection.AssemblyProductAttribute("jobayer_alam_24_ICTBD_MVC_project_3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("jobayer_alam_24_ICTBD_MVC_project_3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
