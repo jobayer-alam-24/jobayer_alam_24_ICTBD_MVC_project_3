@@ -58,11 +58,10 @@ namespace jobayer_alam_24_ICTBD_MVC_project_3.Controllers
                 ISBN = "978-0-06-112008-4"
             };
             //View Models - Multiple Views
-            Alldata alldata = new Alldata();
-            {
-                Student = student1;
-                Course = course1;
-                Book = book1;
+            Alldata alldata = new Alldata(){
+                Student = student1,
+                Course = course1,
+                Book = book1
             };
 
             return View(alldata);
