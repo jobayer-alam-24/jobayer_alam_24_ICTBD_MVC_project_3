@@ -36,4 +36,8 @@ app.MapControllerRoute(
     name: "library",
     pattern: "{controller=books}/{action=data}/{id?}"
 );
+app.MapControllerRoute(
+    name: "all",
+    pattern: "{controller=alldata}/{action=data}/{id?}"
+);
 app.Run();
