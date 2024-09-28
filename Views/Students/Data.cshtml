@@ -1,3 +1,6 @@
+@* Declare Students Object*@
+@model Students;
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,18 +19,38 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>Field</th>
-                    <th>Value</th>
+                    <th>Field Name</th>
+                    <th>Values</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Student ID</td>
-                    <td>1</td>
+                    <td>@Model.StudentsID</td>
                 </tr>
                 <tr>
                     <td>Name</td>
-                    <td>John Doe</td>
+                    <td>@Model.Name</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>@Model.Age</td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td>@Model.PhoneNumber</td>
+                </tr>
+                <tr>
+                    <td>Eamil</td>
+                    <td>@Model.Email</td>
+                </tr>
+                <tr>
+                    <td>Grade</td>
+                    <td>@Model.Grade</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>@Model.Address</td>
                 </tr>
             </tbody>
         </table>
