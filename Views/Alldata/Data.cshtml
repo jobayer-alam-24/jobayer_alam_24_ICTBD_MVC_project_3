@@ -1,3 +1,7 @@
+@using jobayer_alam_24_ICTBD_MVC_project_3.ViewModels
+@* Multiple View  *@
+@model Alldata;
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,8 +19,8 @@
             <thead class="table-primary">
                 <tr>
                     <th class="align-middle">Category</th>
-                    <th class="align-middle">Field</th>
-                    <th class="align-middle">Value</th>
+                    <th class="align-middle">Fields</th>
+                    <th class="align-middle">Values</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,81 +28,81 @@
                 <tr>
                     <td class="table-info" rowspan="6">Student</td>
                     <td class="bg-purple text-white">Student ID</td>
-                    <td class="table-light"></td>
+                    <td class="table-light">@Model.Student.StudentsID</td>
                 </tr>
                 <tr>
                     <td class="bg-purple text-white">Name</td>
-                    <td class="table-light"></td>
+                    <td class="table-light">@Model.Student.Name</td>
                 </tr>
                 <tr>
                     <td class="bg-purple text-white">Age</td>
-                    <td class="table-light"></td>
+                    <td class="table-light">@Model.Student.Age</td>
                 </tr>
                 <tr>
                     <td class="bg-purple text-white">Phone Number</td>
-                    <td class="table-light"></td>
+                    <td class="table-light">@Model.Student.PhoneNumber</td>
                 </tr>
                 <tr>
                     <td class="bg-purple text-white">Email</td>
-                    <td class="table-light"></td>
+                    <td class="table-light">@Model.Student.Email</td>
                 </tr>
                 <tr>
                     <td class="bg-purple text-white">Address</td>
-                    <td class="table-light"></td>
+                    <td class="table-light">@Model.Student.Address</td>
                 </tr>
 
                 <!-- Course Data -->
                 <tr>
                     <td class="table-info" rowspan="6">Course</td>
                     <td class="bg-purple text-white">Course ID</td>
-                    <td class="table-light"></td>
+                    <td class="table-light">@Model.Course.CourseID</td>
                 </tr>
                 <tr>
                     <td class="bg-purple text-white">Name</td>
-                    <td class="table-light"></td>
+                    <td class="table-light">@Model.Course.Name</td>
                 </tr>
                 <tr>
                     <td class="bg-purple text-white">Instructor Name</td>
-                    <td class="table-light"></td>
+                    <td class="table-light">@Model.Course.InstructorName</td>
                 </tr>
                 <tr>
                     <td class="bg-purple text-white">Price</td>
-                    <td class="table-light"></td>
+                    <td class="table-light">@Model.Course.Price</td>
                 </tr>
                 <tr>
                     <td class="bg-purple text-white">Total Enrolled Students</td>
-                    <td class="table-light"></td>
+                    <td class="table-light">@Model.Course.TotalEnrolledStudents</td>
                 </tr>
                 <tr>
                     <td class="bg-purple text-white">Course Duration</td>
-                    <td class="table-light"></td>
+                    <td class="table-light">@Model.Course.CourseDuration</td>
                 </tr>
 
                 <!-- Book Data -->
                 <tr>
                     <td class="table-info" rowspan="6">Book</td>
                     <td class="bg-purple text-white">Book ID</td>
-                    <td class="table-light"></td>
+                    <td class="table-light">@Model.Book.BookID</td>
                 </tr>
                 <tr>
                     <td class="bg-purple text-white">Title</td>
-                    <td class="table-light"></td>
+                    <td class="table-light">@Model.Book.Title</td>
                 </tr>
                 <tr>
                     <td class="bg-purple text-white">Author</td>
-                    <td class="table-light"></td>
+                    <td class="table-light">@Model.Book.Author</td>
                 </tr>
                 <tr>
                     <td class="bg-purple text-white">Genre</td>
-                    <td class="table-light"></td>
+                    <td class="table-light">@Model.Book.Genre</td>
                 </tr>
                 <tr>
                     <td class="bg-purple text-white">Publisher</td>
-                    <td class="table-light"></td>
+                    <td class="table-light">@Model.Book.Publisher</td>
                 </tr>
                 <tr>
                     <td class="bg-purple text-white">ISBN</td>
-                    <td class="table-light"></td>
+                    <td class="table-light">@Model.Book.ISBN</td>
                 </tr>
             </tbody>
         </table>
